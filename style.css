@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+
+.title { 
+ background-color: green;
+ padding: 5px;
+ margin-bottom: 3px;
+}
+
+.main_content {
+	background-color: orange;
+	padding: 5px;
+	margin-bottom: 3px;
+}
+
+.footer {
+	background-color: yellow;
+	padding: 5px;
+}
+
+
+/*Phone*/
+@media only screen and (max-width:481px){
+	.footer_content:before{
+		content:'Phone: ';
+	}
+
+	.footer_content:after{
+		content: ' less than or equal to 480px';
+		font-weight: bold;
+	}
+
+}
+/*Tablet*/
+@media only screen and (min-width: 481px){
+	.footer_content:before{
+		content:'Tablet: ';
+	}
+
+	.footer_content:after{
+		content: ' between 481px and 1023px';
+		font-weight: bold;
+	}
+}
+/*Desktop*/
+@media only screen and (min-width: 1024px){
+	.footer_content:before{
+		content:'Desktop: ';
+	}
+
+	.footer_content:after{
+		content: ' greater than or equal to 1024px';
+		font-weight: bold;
+	}
+}
